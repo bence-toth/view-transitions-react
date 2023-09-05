@@ -1,8 +1,8 @@
-.gallery a {
+.gallery button {
   display: block;
   width: 300px;
 }
 
-.gallery a img {
+.gallery button img {
   width: 100%;
 }

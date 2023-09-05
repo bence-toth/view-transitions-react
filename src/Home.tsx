@@ -1,20 +1,27 @@
-import { Link } from "react-router-dom";
+import useNavigateWithViewTransition from "./useNavigateWithViewTransition";
 
 import items from "./items";
 
 import "./Home.css";
 
 const HomeComponent = () => {
+  const navigateWithViewTransition = useNavigateWithViewTransition();
+
   return (
     <div className="gallery">
       {items.map((item) => (
-        <Link key={item.id} to={`items/${item.id}`}>
+        <button
+          key={item.id}
+          onClick={() => {
+            navigateWithViewTransition(`items/${item.id}`);
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/${item.filename}`}
             alt={item.name}
           />
           {item.name}
-        </Link>
+        </button>
       ))}
     </div>
   );

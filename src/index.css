@@ -9,3 +9,34 @@ body,
 #root {
   height: 100%;
 }
+
+::view-transition-old(root) {
+  animation: fade-and-scale-out 0.5s ease-in-out 1 forwards;
+}
+::view-transition-new(root) {
+  animation: fade-and-scale-in 1s ease-in-out 1 forwards;
+}
+
+@keyframes fade-and-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-and-scale-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
