@@ -7,3 +7,38 @@
 main {
   padding: 24px;
 }
+
+::view-transition-old(view-transition-image-1),
+::view-transition-old(view-transition-image-2),
+::view-transition-old(view-transition-image-3),
+::view-transition-old(view-transition-image-4) {
+  object-fit: contain;
+}
+
+::view-transition-new(view-transition-image-1),
+::view-transition-new(view-transition-image-2),
+::view-transition-new(view-transition-image-3),
+::view-transition-new(view-transition-image-4) {
+  object-fit: cover;
+}
+
+::view-transition-old(view-transition-image-1),
+::view-transition-new(view-transition-image-1),
+::view-transition-old(view-transition-image-2),
+::view-transition-new(view-transition-image-2),
+::view-transition-old(view-transition-image-3),
+::view-transition-new(view-transition-image-3),
+::view-transition-old(view-transition-image-4),
+::view-transition-new(view-transition-image-4) {
+  animation: none;
+  mix-blend-mode: normal;
+  height: 100%;
+  overflow: clip;
+}
+
+::view-transition-image-pair(view-transition-image-1),
+::view-transition-image-pair(view-transition-image-2),
+::view-transition-image-pair(view-transition-image-3),
+::view-transition-image-pair(view-transition-image-4) {
+  isolation: none;
+}

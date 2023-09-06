@@ -1,6 +1,6 @@
 import useNavigateWithViewTransition from "./useNavigateWithViewTransition";
 
-import items from "./items";
+import animals from "./animals";
 
 import "./Home.css";
 
@@ -9,21 +9,21 @@ const HomeComponent = () => {
 
   return (
     <div className="main-nav">
-      {items.map((item) => (
+      {animals.map((animal) => (
         <button
-          key={item.id}
+          key={animal.id}
           onClick={() => {
-            navigateWithViewTransition(`/items/${item.id}`);
+            navigateWithViewTransition(`/animals/${animal.id}`);
           }}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/${item.filename}`}
-            alt={item.name}
+            src={`${process.env.PUBLIC_URL}/${animal.filename}`}
+            alt={animal.name}
             style={{
-              viewTransitionName: `view-transition-image-${item.id}`,
+              viewTransitionName: `view-transition-image-${animal.id}`,
             }}
           />
-          <span>{item.name}</span>
+          <span>{animal.name}</span>
         </button>
       ))}
     </div>

@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Header from "./Header";
 import Home from "./Home";
-import Item from "./Item";
+import Animal from "./Animal";
 
 import "./App.css";
 
@@ -12,7 +12,7 @@ const App = () => (
     <main>
       <Routes>
         <Route element={<Home />} path="/" />
-        <Route element={<Item />} path="/items/:itemId" />
+        <Route element={<Animal />} path="/animals/:animalId" />
       </Routes>
     </main>
   </div>
