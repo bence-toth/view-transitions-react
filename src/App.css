@@ -1,0 +1,9 @@
+.site {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 64px auto;
+}
+
+main {
+  padding: 24px;
+}

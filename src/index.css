@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +10,19 @@ html,
 body,
 #root {
   height: 100%;
+}
+
+body {
+  color: white;
+  font-family: "EB Garamond", serif;
+  background-color: hsl(0deg 0% 15%);
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
 }
 
 ::view-transition-old(view-transition-image-1),

@@ -8,7 +8,7 @@ const HomeComponent = () => {
   const navigateWithViewTransition = useNavigateWithViewTransition();
 
   return (
-    <div className="gallery">
+    <div className="main-nav">
       {items.map((item) => (
         <button
           key={item.id}
@@ -23,7 +23,7 @@ const HomeComponent = () => {
               viewTransitionName: `view-transition-image-${item.id}`,
             }}
           />
-          {item.name}
+          <span>{item.name}</span>
         </button>
       ))}
     </div>

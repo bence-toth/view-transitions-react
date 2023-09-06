@@ -19,14 +19,22 @@ const ItemComponent = () => {
 
   return (
     <div className="item">
-      <h1>{item.name}</h1>
-      <img
-        className="big"
-        src={`${process.env.PUBLIC_URL}/${item.filename}`}
-        alt={item.name}
-        style={{ viewTransitionName: `view-transition-image-${item.id}` }}
-      />
+      <article>
+        <h1>{item.name}</h1>
+        <img
+          className="big"
+          src={`${process.env.PUBLIC_URL}/${item.filename}`}
+          alt={item.name}
+          style={{ viewTransitionName: `view-transition-image-${item.id}` }}
+        />
+        <div className="description">
+          {item.description.split("\n").map((paragraph, paragraphIndex) => (
+            <p key={paragraphIndex}>{paragraph}</p>
+          ))}
+        </div>
+      </article>
       <div>
+        <h2>Other interesting animals</h2>
         {items
           .filter((item) => item.id !== itemId)
           .map((item) => (
@@ -48,14 +56,6 @@ const ItemComponent = () => {
             </button>
           ))}
       </div>
-      <button
-        key={item.id}
-        onClick={() => {
-          navigateWithViewTransition("/");
-        }}
-      >
-        Back home
-      </button>
     </div>
   );
 };

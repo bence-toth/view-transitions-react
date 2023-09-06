@@ -1,15 +1,18 @@
 import { Route, Routes } from "react-router-dom";
 
+import Header from "./Header";
 import Home from "./Home";
 import Item from "./Item";
 
+import "./App.css";
+
 const App = () => (
-  <div>
-    <header>Some header</header>
+  <div className="site">
+    <Header />
     <main>
       <Routes>
         <Route element={<Home />} path="/" />
-        <Route element={<Item />} path="items/:itemId" />
+        <Route element={<Item />} path="/items/:itemId" />
       </Routes>
     </main>
   </div>

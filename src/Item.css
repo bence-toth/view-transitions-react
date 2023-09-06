@@ -1,3 +1,8 @@
+.item {
+  display: grid;
+  grid-template-columns: auto 240px;
+}
+
 .item .big {
   width: 800px;
 }
