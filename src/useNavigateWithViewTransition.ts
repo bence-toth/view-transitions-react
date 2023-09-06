@@ -1,4 +1,5 @@
 import { useCallback } from "react";
+import { flushSync } from "react-dom";
 import { useNavigate } from "react-router-dom";
 
 const useNavigateWithViewTransition = () => {
@@ -7,7 +8,9 @@ const useNavigateWithViewTransition = () => {
   return useCallback(
     (newRoute: string) => {
       document.startViewTransition(() => {
-        navigate(newRoute);
+        flushSync(() => {
+          navigate(newRoute);
+        });
       });
     },
     [navigate]

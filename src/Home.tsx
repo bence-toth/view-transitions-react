@@ -13,12 +13,15 @@ const HomeComponent = () => {
         <button
           key={item.id}
           onClick={() => {
-            navigateWithViewTransition(`items/${item.id}`);
+            navigateWithViewTransition(`/items/${item.id}`);
           }}
         >
           <img
             src={`${process.env.PUBLIC_URL}/${item.filename}`}
             alt={item.name}
+            style={{
+              viewTransitionName: `view-transition-image-${item.id}`,
+            }}
           />
           {item.name}
         </button>
