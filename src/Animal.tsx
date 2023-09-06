@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 
-import useNavigateWithViewTransition from "./useNavigateWithViewTransition";
 import SideNavigation from "./SideNavigation";
 import animals from "./animals";
 
@@ -8,10 +7,7 @@ import "./Animal.css";
 
 const Animal = () => {
   const { animalId } = useParams();
-
   const animal = animals.find((animal) => animal.id === animalId);
-
-  const navigateWithViewTransition = useNavigateWithViewTransition();
 
   if (!animal) {
     return null;
