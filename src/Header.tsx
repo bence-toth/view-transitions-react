@@ -3,7 +3,6 @@ import { matchPath } from "react-router";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 
 import useNavigateWithViewTransition from "./useNavigateWithViewTransition";
-
 import animals from "./animals";
 
 import "./Header.css";
@@ -21,14 +20,16 @@ const Header = () => {
         <h1 className="title">Interesting animals</h1>
       ) : (
         <>
-          <button
-            className="back-button"
-            onClick={() => {
-              navigateWithViewTransition("/");
-            }}
-          >
-            <AiOutlineArrowLeft />
-          </button>
+          <nav>
+            <button
+              className="back-button"
+              onClick={() => {
+                navigateWithViewTransition("/");
+              }}
+            >
+              <AiOutlineArrowLeft />
+            </button>
+          </nav>
           <h1 className="title">{animal.name}</h1>
         </>
       )}

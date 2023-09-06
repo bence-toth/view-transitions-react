@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 
 import useNavigateWithViewTransition from "./useNavigateWithViewTransition";
-
+import SideNavigation from "./SideNavigation";
 import animals from "./animals";
 
 import "./Animal.css";
@@ -32,29 +32,7 @@ const Animal = () => {
           style={{ viewTransitionName: `view-transition-image-${animal.id}` }}
         />
       </article>
-      <div>
-        <h2>Other interesting animals</h2>
-        {animals
-          .filter((animal) => animal.id !== animalId)
-          .map((animal) => (
-            <button
-              key={animal.id}
-              onClick={() => {
-                navigateWithViewTransition(`/animals/${animal.id}`);
-              }}
-            >
-              <img
-                src={`${process.env.PUBLIC_URL}/${animal.filename}`}
-                alt={animal.name}
-                className="small"
-                style={{
-                  viewTransitionName: `view-transition-image-${animal.id}`,
-                }}
-              />
-              {animal.name}
-            </button>
-          ))}
-      </div>
+      <SideNavigation selectedAnimalId={animal.id} />
     </div>
   );
 };

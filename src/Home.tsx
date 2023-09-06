@@ -1,5 +1,4 @@
 import useNavigateWithViewTransition from "./useNavigateWithViewTransition";
-
 import animals from "./animals";
 
 import "./Home.css";
