@@ -1,7 +1,7 @@
 // TODO: Add media queries
-// TODO: Make scroll bars look nice
 // TODO: Make top navigation arrow animation shift/slide
 // TODO: Add links (image source, wikipedia)
+// TODO: Publish to GitHub pages
 
 import React from "react";
 import ReactDOM from "react-dom/client";

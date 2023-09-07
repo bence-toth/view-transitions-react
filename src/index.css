@@ -26,3 +26,21 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(0deg 0% 15%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(0deg 0% 90%);
+  border: 5px solid hsl(0deg 0% 15%);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
