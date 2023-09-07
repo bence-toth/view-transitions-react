@@ -1,8 +1,13 @@
 .main-nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr;
   gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .main-nav {
+    grid-template-columns: 1fr;
+  }
 }
 
 .main-nav button {

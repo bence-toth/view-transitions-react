@@ -4,10 +4,23 @@
   gap: 1rem;
 }
 
+@media (max-width: 960px) {
+  .animal {
+    grid-template-columns: 1fr;
+  }
+}
+
 .animal article {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+}
+
+@media (max-width: 1280px) {
+  .animal article {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .animal .description p {
