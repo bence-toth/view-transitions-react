@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 24px;
+}
+
 html,
 body,
 #root {
@@ -28,7 +32,7 @@ button {
 }
 
 ::-webkit-scrollbar {
-  width: 14px;
+  width: 0.65rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -37,8 +41,8 @@ button {
 
 ::-webkit-scrollbar-thumb {
   background: hsl(0deg 0% 90%);
-  border: 5px solid hsl(0deg 0% 15%);
-  border-radius: 12px;
+  border: 0.25rem solid hsl(0deg 0% 15%);
+  border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {

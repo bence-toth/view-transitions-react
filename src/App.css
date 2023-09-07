@@ -1,11 +1,11 @@
 .site {
   height: 100%;
   display: grid;
-  grid-template-rows: 64px auto;
+  grid-template-rows: 3rem auto;
 }
 
 main {
-  padding: 24px;
+  padding: 1rem;
 }
 
 ::view-transition-old(view-transition-image-1),

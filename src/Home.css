@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
-  gap: 24px;
+  gap: 1rem;
 }
 
 .main-nav button {
@@ -21,10 +21,10 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  font-size: 32px;
+  font-size: 1.25rem;
   background: rgba(0 0 0 / 80%);
   border-top: 1px solid rgba(0 0 0 / 90%);
-  height: 64px;
+  height: 2rem;
   color: white;
   display: flex;
   align-items: center;

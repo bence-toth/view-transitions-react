@@ -1,17 +1,17 @@
 .animal {
   display: grid;
-  grid-template-columns: auto 320px;
-  gap: 24px;
+  grid-template-columns: auto 14rem;
+  gap: 1rem;
 }
 
 .animal article {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 1rem;
 }
 
 .animal .description p {
-  font-size: 24px;
+  font-size: 1rem;
   line-height: 1.75;
   margin-bottom: 1em;
 }
