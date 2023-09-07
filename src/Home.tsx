@@ -16,7 +16,7 @@ const HomeComponent = () => {
           }}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/${animal.filename}`}
+            src={`${process.env.PUBLIC_URL}/${animal.imageFilename}`}
             alt={animal.name}
             style={{
               viewTransitionName: `view-transition-image-${animal.id}`,

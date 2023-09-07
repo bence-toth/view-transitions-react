@@ -1,5 +1,8 @@
 import { useParams } from "react-router-dom";
 
+import { BsWikipedia } from "react-icons/bs";
+import { BiLogoUnsplash } from "react-icons/bi";
+
 import SideNavigation from "./SideNavigation";
 import animals from "./animals";
 
@@ -21,12 +24,36 @@ const Animal = () => {
             <p key={paragraphIndex}>{paragraph}</p>
           ))}
         </div>
-        <img
-          className="main-image"
-          src={`${process.env.PUBLIC_URL}/${animal.filename}`}
-          alt={animal.name}
-          style={{ viewTransitionName: `view-transition-image-${animal.id}` }}
-        />
+        <div>
+          <img
+            className="main-image"
+            src={`${process.env.PUBLIC_URL}/${animal.imageFilename}`}
+            alt={animal.name}
+            style={{ viewTransitionName: `view-transition-image-${animal.id}` }}
+          />
+          <nav className="source-links">
+            <ul>
+              <li>
+                <a
+                  href={animal.imageSource}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <BiLogoUnsplash />
+                </a>
+              </li>
+              <li>
+                <a
+                  href={animal.descriptionSource}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <BsWikipedia />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </article>
       <SideNavigation selectedAnimalId={animal.id} />
     </div>

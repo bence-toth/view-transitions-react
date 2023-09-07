@@ -33,3 +33,29 @@
   border: 1px solid rgba(0 0 0 / 90%);
   width: 100%;
 }
+
+.animal .source-links ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.animal .source-links a {
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  outline: 1px solid white;
+  outline-offset: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 1.5rem;
+  color: black;
+}
+
+.animal .source-links a:focus-visible {
+  outline-width: 2px;
+}
