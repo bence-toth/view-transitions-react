@@ -1,6 +1,3 @@
-// TODO: Make top navigation arrow animation shift/slide
-// TODO: Publish to GitHub pages
-
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
