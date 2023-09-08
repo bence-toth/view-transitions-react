@@ -16,23 +16,21 @@ const Header = () => {
 
   return (
     <header className="site-header">
-      {animal === undefined ? (
-        <h1 className="title">Interesting animals</h1>
-      ) : (
-        <>
-          <nav>
-            <button
-              className="back-button"
-              onClick={() => {
-                navigateWithViewTransition("/");
-              }}
-            >
-              <AiOutlineArrowLeft />
-            </button>
-          </nav>
-          <h1 className="title">{animal.name}</h1>
-        </>
+      {animal !== undefined && (
+        <nav>
+          <button
+            className="back-button"
+            onClick={() => {
+              navigateWithViewTransition("/");
+            }}
+          >
+            <AiOutlineArrowLeft />
+          </button>
+        </nav>
       )}
+      <h1 className="title">
+        {animal === undefined ? "Interesting animals" : animal.name}
+      </h1>
     </header>
   );
 };
