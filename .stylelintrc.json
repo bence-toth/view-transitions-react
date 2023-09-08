@@ -4,6 +4,12 @@
   "rules": {
     "prettier/prettier": true,
     "import-notation": null,
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["view-transition-name"]
+      }
+    ],
     "selector-pseudo-element-no-unknown": [
       true,
       {
