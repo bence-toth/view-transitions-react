@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bence-toth/view-transitions-react/static/css/main.859a9d2a.css",
+    "main.js": "/bence-toth/view-transitions-react/static/js/main.76121d45.js",
+    "static/js/787.3bcb990e.chunk.js": "/bence-toth/view-transitions-react/static/js/787.3bcb990e.chunk.js",
+    "index.html": "/bence-toth/view-transitions-react/index.html",
+    "main.859a9d2a.css.map": "/bence-toth/view-transitions-react/static/css/main.859a9d2a.css.map",
+    "main.76121d45.js.map": "/bence-toth/view-transitions-react/static/js/main.76121d45.js.map",
+    "787.3bcb990e.chunk.js.map": "/bence-toth/view-transitions-react/static/js/787.3bcb990e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.859a9d2a.css",
+    "static/js/main.76121d45.js"
+  ]
+}
