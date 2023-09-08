@@ -1,6 +1,7 @@
 {
   "name": "view-transitions-react",
   "version": "0.1.0",
+  "homepage": "https://github.com/bence-toth/view-transitions-react",
   "private": true,
   "dependencies": {
     "classnames": "^2.3.2",
@@ -20,7 +21,9 @@
     "lint-js": "eslint \"**/*.{ts,tsx}\"",
     "lint-css": "stylelint \"**/*.css\"",
     "prettier": "prettier --check .",
-    "test:coverage": "npm test -- --coverage --watchAll=false"
+    "test:coverage": "npm test -- --coverage --watchAll=false",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +55,7 @@
     "@types/react-dom": "^18.2.7",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-sonarjs": "^0.13.0",
+    "gh-pages": "^6.0.0",
     "prettier": "^2.8.8",
     "stylelint": "^14.16.1",
     "stylelint-config-prettier": "^9.0.5",
