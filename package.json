@@ -1,7 +1,6 @@
 {
   "name": "view-transitions-react",
   "version": "0.1.0",
-  "homepage": "https://bence-toth.github.com/view-transitions-react",
   "private": true,
   "dependencies": {
     "classnames": "^2.3.2",
